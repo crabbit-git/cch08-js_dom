@@ -18,24 +18,25 @@
   <section id="list">
     <h2>Stoatin' Drams</h2>
     <ul class="list-container"></ul>
+    <button class="button" id="delete-all">Clear list</button>
   </section>
   <section id="add">
     <h2>Add a whisky</h2>
     <div class="form-container">
       <form>
         <div class="form-input">
-          <div>
+          <div class="form-input">
             <label for="name">Name:</label>
           </div>
-          <div>
+          <div class="form-input">
             <input type="text" id="name" placeholder="Tam's Dram" required/>
           </div>
         </div>
         <div class="form-input">
-          <div>
+          <div class="form-input">
             <label for="abv">Alcohol % by volume:</label>
           </div>
-          <div>
+          <div class="form-input">
             <input type="number" id="abv" min="0" max="100" placeholder="40" step="0.1" required/>
           </div>
         </div>
@@ -50,7 +51,7 @@
             <label for="blended-malt">Blended (a.k.a. vatted) malt</label><br/>
             <input type="radio" name="type" id="single-grain" value="Single grain" required/>
             <label for="single-grain">Single grain</label><br/>
-            <input type="radio" name="type" id="blended" value="Blended (grand and malt)"/>
+            <input type="radio" name="type" id="blended" value="Blended (grain and malt)"/>
             <label for="blended">Blended (grain and malt)</label>
           </div>
         </div>
@@ -91,7 +92,9 @@
             <label for="other">&#127988; Other</label><br/>
           </div>
         </div>
-        <input type="submit" value="Submit"/>
+        <div class="form-input">
+          <input type="submit" value="Submit"/>
+        </div>
       </form>
     </div>
   </section>

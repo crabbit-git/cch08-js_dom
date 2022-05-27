@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+section {
+  margin-bottom: 5%;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -36,10 +40,12 @@ ul {
   font-size: xx-large;
 }
 
-#add {
+form {
   text-align: justify;
 }
 
 .form-input {
+  justify-content: center;
   display: flex;
+  padding: 5px;
 }
