@@ -3,6 +3,7 @@ const Whisky = require('./models/whisky.js');
 const generateListItem = (whisky) => {
   const container = document.querySelector('.list-container');
   const listItem = document.createElement('li');
+  listItem.classList.add('whisky');
   container.appendChild(listItem);
   const itemProperties = document.createElement('ul');
   listItem.appendChild(itemProperties);
