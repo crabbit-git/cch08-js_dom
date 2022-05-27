@@ -18,6 +18,10 @@ const generateListItem = (whisky) => {
   itemProperty3.classList.add('whisky-type');
   itemProperty3.textContent = whisky.type;
   itemProperties.appendChild(itemProperty3);
+  const itemProperty4 = document.createElement('li');
+  itemProperty4.classList.add('whisky-country');
+  itemProperty4.textContent = whisky.country;
+  itemProperties.appendChild(itemProperty4);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const whisky = new Whisky(
       event.target['name'].value,
       event.target['abv'].value,
-      event.target['type'].value
+      event.target['type'].value,
+      event.target['country'].value
     );
     generateListItem(whisky);
     event.target.reset();

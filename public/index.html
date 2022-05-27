@@ -9,7 +9,7 @@
   <title>Whisky Hall of Fame</title>
 </head>
 <body>
-  <h1>Whisky Hall of Fame &#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631;</h1>
+  <h1>Whisky Hall of Fame</h1>
   <section id="intro">
     <p>
       Aye, "whisky". Nae "e".
@@ -29,16 +29,55 @@
         <input type="number" id="abv" min="0" max="100" placeholder="40" step="0.1" required/>
       </div>
       <div class="radio-input">
-        <div><label for="type">Type:</label></div>
+        <div>
+          <label for="type">Type:</label>
+        </div>
         <div>
           <input type="radio" name="type" id="single-malt" value="Single malt" required/>
-          <label for="single-malt">Single malt</label><br>
+          <label for="single-malt">Single malt</label><br/>
           <input type="radio" name="type" id="blended-malt" value="Blended malt"/>
-          <label for="blended-malt">Blended (a.k.a. vatted) malt</label><br>
+          <label for="blended-malt">Blended (a.k.a. vatted) malt</label><br/>
           <input type="radio" name="type" id="single-grain" value="Single grain" required/>
-          <label for="single-grain">Single grain</label><br>
-          <input type="radio" name="type" id="blended" value="Blended whisky"/>
-          <label for="blended">Blended (grain + malt)</label>
+          <label for="single-grain">Single grain</label><br/>
+          <input type="radio" name="type" id="blended" value="Blended (grand and malt)"/>
+          <label for="blended">Blended (grain and malt)</label>
+        </div>
+      </div>
+      <div class="radio-input">
+        <div>
+          <label for="country">Country of origin:</label>
+        </div>
+        <div>
+          <input type="radio" name="country" id="sco" value="&#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631;" required/>
+          <label for="sco">&#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631; Scotland</label><br/>
+          <input type="radio" name="country" id="roi" value="&#127470;&#127466;" required/>
+          <label for="roi">&#127470;&#127466; Republic of Ireland</label><br/>
+          <input type="radio" name="country" id="ni" value="&#127468;&#127463;" required/>
+          <label for="ni">&#127468;&#127463; Northern Ireland</label><br/>
+          <input type="radio" name="country" id="wal" value="&#127988;&#917607;&#917602;&#917623;&#917612;&#917619;&#917631;" required/>
+          <label for="wal">&#127988;&#917607;&#917602;&#917623;&#917612;&#917619;&#917631; Wales</label><br/>
+          <input type="radio" name="country" id="eng" value="&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;" required/>
+          <label for="eng">&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631; England</label><br/>
+          <input type="radio" name="country" id="jap" value="&#127471;&#127477;" required/>
+          <label for="jap">&#127471;&#127477; Japan</label><br/>
+          <input type="radio" name="country" id="ca" value="&#127464;&#127462;" required/>
+          <label for="ca">&#127464;&#127462; Canada</label><br/>
+          <input type="radio" name="country" id="usa" value="&#127482;&#127480;" required/>
+          <label for="usa">&#127482;&#127480; United States of America</label><br/>
+          <input type="radio" name="country" id="usa" value="&#127470;&#127475;" required/>
+          <label for="usa">&#127470;&#127475; India</label><br/>
+          <input type="radio" name="country" id="aus" value="&#127462;&#127482;" required/>
+          <label for="aus">&#127462;&#127482; Australia</label><br/>
+          <input type="radio" name="country" id="swe" value="&#127480;&#127466;" required/>
+          <label for="swe">&#127480;&#127466; Sweden</label><br/>
+          <input type="radio" name="country" id="twn" value="&#127481;&#127484;" required/>
+          <label for="twn">&#127481;&#127484; Taiwan</label><br/>
+          <input type="radio" name="country" id="de" value="&#127465;&#127466;" required/>
+          <label for="de">&#127465;&#127466; Germany</label><br/>
+          <input type="radio" name="country" id="fr" value="&#127467;&#127479;" required/>
+          <label for="fr">&#127467;&#127479; France</label><br/>
+          <input type="radio" name="country" id="other" value="&#127988;" required/>
+          <label for="other">&#127988; Other</label><br/>
         </div>
       </div>
       <input type="submit" value="Submit"/>
