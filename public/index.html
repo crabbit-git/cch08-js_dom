@@ -16,7 +16,7 @@
     </p>
   </section>
   <section id="list">
-    <h2>Stoatin' Drams</h2>
+    <h2>STOATIN' DRAMS:</h2>
     <ul class="list-container"></ul>
     <button class="button" id="delete-all">Clear list</button>
   </section>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="form-input">
-          <div>
+          <div class="radio-input">
             <label for="type">Type:</label>
           </div>
           <div>
@@ -56,40 +56,69 @@
           </div>
         </div>
         <div class="form-input">
-          <div>
+          <div class="form-input">
             <label for="country">Country of origin:</label>
           </div>
-          <div>
-            <input type="radio" name="country" id="sco" value="&#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631;" required/>
-            <label for="sco">&#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631; Scotland</label><br/>
-            <input type="radio" name="country" id="roi" value="&#127470;&#127466;" required/>
-            <label for="roi">&#127470;&#127466; Republic of Ireland</label><br/>
-            <input type="radio" name="country" id="ni" value="&#127468;&#127463;" required/>
-            <label for="ni">&#127468;&#127463; Northern Ireland</label><br/>
-            <input type="radio" name="country" id="wal" value="&#127988;&#917607;&#917602;&#917623;&#917612;&#917619;&#917631;" required/>
-            <label for="wal">&#127988;&#917607;&#917602;&#917623;&#917612;&#917619;&#917631; Wales</label><br/>
-            <input type="radio" name="country" id="eng" value="&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;" required/>
-            <label for="eng">&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631; England</label><br/>
-            <input type="radio" name="country" id="jap" value="&#127471;&#127477;" required/>
-            <label for="jap">&#127471;&#127477; Japan</label><br/>
-            <input type="radio" name="country" id="ca" value="&#127464;&#127462;" required/>
-            <label for="ca">&#127464;&#127462; Canada</label><br/>
-            <input type="radio" name="country" id="usa" value="&#127482;&#127480;" required/>
-            <label for="usa">&#127482;&#127480; United States of America</label><br/>
-            <input type="radio" name="country" id="usa" value="&#127470;&#127475;" required/>
-            <label for="usa">&#127470;&#127475; India</label><br/>
-            <input type="radio" name="country" id="aus" value="&#127462;&#127482;" required/>
-            <label for="aus">&#127462;&#127482; Australia</label><br/>
-            <input type="radio" name="country" id="swe" value="&#127480;&#127466;" required/>
-            <label for="swe">&#127480;&#127466; Sweden</label><br/>
-            <input type="radio" name="country" id="twn" value="&#127481;&#127484;" required/>
-            <label for="twn">&#127481;&#127484; Taiwan</label><br/>
-            <input type="radio" name="country" id="de" value="&#127465;&#127466;" required/>
-            <label for="de">&#127465;&#127466; Germany</label><br/>
-            <input type="radio" name="country" id="fr" value="&#127467;&#127479;" required/>
-            <label for="fr">&#127467;&#127479; France</label><br/>
-            <input type="radio" name="country" id="other" value="&#127988;" required/>
-            <label for="other">&#127988; Other</label><br/>
+          <div class="form-input">
+            <select name="country" id="country" required>
+              <option value="" selected disabled>
+                Please select a country
+              </option>
+              <option value="&#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631;">
+                Scotland &#127988;&#917607;&#917602;&#917619;&#917603;&#917620;&#917631;
+              </option>
+              <option value="&#127470;&#127466;">
+                Republic of Ireland &#127470;&#127466;
+              </option>
+              <option value="&#127468;&#127463;">
+                Northern Ireland &#127468;&#127463;
+              </option>
+              <option value="&#127988;&#917607;&#917602;&#917623;&#917612;&#917619;&#917631;">
+                Wales &#127988;&#917607;&#917602;&#917623;&#917612;&#917619;&#917631;
+              </option>
+              <option value="&#127471;&#127477;">
+                Japan &#127471;&#127477;
+              </option>
+              <option value="&#127462;&#127482;">
+                Australia &#127462;&#127482;
+              </option>
+              <option value="&#127467;&#127479;">
+                France &#127467;&#127479;
+              </option>
+              <option value="&#127465;&#127466;">
+                Germany &#127465;&#127466;
+              </option>
+              <option value="&#127467;&#127470;">
+                Finland &#127467;&#127470;
+              </option>
+              <option value="&#127480;&#127466;">
+                Sweden &#127480;&#127466;
+              </option>
+              <option value="&#127481;&#127484;">
+                Taiwan &#127481;&#127484;
+              </option>
+              <option value="&#127470;&#127475;">
+                India &#127470;&#127475;
+              </option>
+              <option value="value=&#127466;&#127480;">
+                Spain &#127466;&#127480;
+              </option>
+              <option value="&#127470;&#127481;">
+                Italy &#127470;&#127481;
+              </option>
+              <option value="&#127464;&#127462;">
+                Canada &#127464;&#127462;
+              </option>
+              <option value="&#127482;&#127480;">
+                United States of America &#127482;&#127480;
+              </option>
+              <option value="&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;">
+                England &#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;
+              </option>
+              <option value="&#127988;">
+                Other &#127988;
+              </option>
+            </select>
           </div>
         </div>
         <div class="form-input">

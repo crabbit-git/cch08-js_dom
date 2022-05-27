@@ -1,6 +1,12 @@
 body {
-  background-color: #ffbf00;
+  background-color: darkgreen;
+  color: #ffbf00;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
+}
+
+h1 {
+  font-family: cursive;
 }
 
 section {
@@ -20,8 +26,8 @@ ul {
 }
 
 .whisky {
-  background-color: darkgreen;
-  color: wheat;
+  background-color: #ffbf00;
+  color: black;
   border-radius: 20px;
   padding: 2%;
   margin: 1%;
@@ -48,4 +54,8 @@ form {
   justify-content: center;
   display: flex;
   padding: 5px;
+}
+
+.radio-input {
+  padding-right: 5px;
 }
