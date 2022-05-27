@@ -1,3 +1,42 @@
+const Whisky = require('./models/whisky.js');
+
+const generateListItem = (whisky) => {
+  const container = document.querySelector('.list-container');
+  const listItem = document.createElement('li');
+  container.appendChild(listItem);
+  const itemProperties = document.createElement('ul');
+  listItem.appendChild(itemProperties);
+  const itemProperty1 = document.createElement('li');
+  itemProperty1.classList.add('whisky-name');
+  itemProperty1.textContent = whisky.name;
+  itemProperties.appendChild(itemProperty1);
+  const itemProperty2 = document.createElement('li');
+  itemProperty1.classList.add('whisky-abv');
+  itemProperty2.textContent = `${whisky.abv}% a.b.v.`;
+  itemProperties.appendChild(itemProperty2);
+  const itemProperty3 = document.createElement('li');
+  itemProperty3.classList.add('whisky-type');
+  itemProperty3.textContent = whisky.type;
+  itemProperties.appendChild(itemProperty3);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const whisky = new Whisky(
+      event.target['name'].value,
+      event.target['abv'].value,
+      event.target['type'].value
+    );
+    generateListItem(whisky);
+    event.target.reset();
+  });
+});
+
+// For no real reason other than experimentation, I originally had all of the
+// following code at the top of the file then called it, rather than writing
+// directly into index.html like a normal person. I got bored of it eventually.
 // const renderSkeleton = () => {
 //   const body = document.querySelector('body');
 //   const mainHeading = document.createElement('h1');
@@ -59,28 +98,3 @@
 //   formField3Opt1Label.textContent = 'Option 1';
 //   formField3Opt1.appendChild(formField3Opt1Label);
 // }
-
-const generateListItem = () => {
-  const listContent = document.querySelector('.list-container');
-  const listItem = document.createElement('li');
-  listItem.textContent = 'This is a list item';
-  listContent.appendChild(listItem);
-  const itemProperties = document.createElement('ul');
-  listItem.appendChild(itemProperties);
-  const itemProperty1 = document.createElement('li');
-  itemProperty1.textContent = 'This is a property of a list item';
-  itemProperties.appendChild(itemProperty1);
-  const itemProperty2 = document.createElement('li');
-  itemProperty2.textContent = 'This is another property of a list item';
-  itemProperties.appendChild(itemProperty2);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  // renderSkeleton();
-  generateListItem();
-  generateListItem();
-  generateListItem();
-  generateListItem();
-  generateListItem();
-  generateListItem();
-});
